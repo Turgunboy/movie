@@ -1,0 +1,64 @@
+.app_movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #123333;
+}
+.movie {
+  width: 300px;
+  margin: 20px 15px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #123356;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
+}
+.movie img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.movie .movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.movie-info h1 {
+  font-size: 1rem;
+  width: 300px;
+}
+.movie-info span {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #021f3d;
+  background-color: #12335698;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.orange {
+  color: orange;
+}
+.movie .movie-over {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transition: ease-in-out 0.3s;
+  background-color: white;
+  bottom: 0;
+  transform: translateY(100%);
+}
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
